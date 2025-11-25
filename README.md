@@ -1,7 +1,7 @@
-<!-- <FILE>README.md</FILE> - <DESC>Documentation for v2.0 Smart Mode</DESC> -->
-<!-- <VERS>VERSION: 2.0.0 - 2025-11-25T17:20:21Z</VERS> -->
-<!-- <WCTX>Rewritten to highlight Smart Mode, Security, and Streaming features.</WCTX> -->
-<!-- <CLOG>Updated usage examples, added Architecture/Security sections.</CLOG> -->
+<!-- <FILE>README.md</FILE> - <DESC>Documentation for v2.0 Smart Mode (ASCII Safe)</DESC> -->
+<!-- <VERS>VERSION: 2.1.0 - 2025-11-25T17:51:29Z</VERS> -->
+<!-- <WCTX>Removed non-ASCII glyphs/artifacts to ensure clean rendering.</WCTX> -->
+<!-- <CLOG>Replaced mojobake/emojis with standard Markdown formatting.</CLOG> -->
 
 # wsl-clip
 **The Ultimate Clipboard Bridge for WSL2.**
@@ -10,15 +10,15 @@
 *   **Images** -> Copies the bitmap (pasted into Slack/Paint).
 *   **Files** -> Copies the file object (pasted into Explorer/Outlook).
 ## Features
-*   **≡ƒºá Smart Mode:** Just run `wsl-clip <file>`. The tool detects:
+*   **Smart Mode:** Just run `wsl-clip <file>`. The tool detects:
     *   **Magic Bytes:** Recognizes PNG, JPG, PDF, ZIP, etc. regardless of extension.
     *   **Assets:** Forces "File Object" mode for 3D models (DXF, STL) and Archives.
     *   **Text:** Defaults to text for source code and logs.
-*   **≡ƒº½ Secure by Default:**
+*   **Secure by Default:**
     *   **Pastejacking Protection:** Strips invisible control characters (backspace, bell) that can hide malicious commands.
     *   **ANSI Stripping:** Automatically removes terminal color codes for clean pasting.
-*   **≡ƒÜâ Streaming Architecture:** Uses O(1) memory. Pipe gigabytes of logs (`cat huge.log | wsl-clip`) without crashing your RAM.
-*   **≡ƒºá Multi-File Support:** `wsl-clip *.pdf` copies multiple files as a single drop list.
+*   **Streaming Architecture:** Uses O(1) memory. Pipe gigabytes of logs (`cat huge.log | wsl-clip`) without crashing your RAM.
+*   **Multi-File Support:** `wsl-clip *.pdf` copies multiple files as a single drop list.
 ## Installation
 ### From Source
 ```bash
@@ -80,5 +80,5 @@ wsl-clip path document.pdf
 ## License
 MIT
 
-<!-- <FILE>README.md</FILE> - <DESC>Documentation for v2.0 Smart Mode</DESC> -->
-<!-- <VERS>END OF VERSION: 2.0.0 - 2025-11-25T17:20:21Z</VERS> -->
+<!-- <FILE>README.md</FILE> - <DESC>Documentation for v2.0 Smart Mode (ASCII Safe)</DESC> -->
+<!-- <VERS>END OF VERSION: 2.1.0 - 2025-11-25T17:51:29Z</VERS> -->
