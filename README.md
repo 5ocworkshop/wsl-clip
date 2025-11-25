@@ -1,7 +1,7 @@
 <!-- <FILE>README.md</FILE> - <DESC>Documentation for v2.0 Smart Mode (ASCII Safe)</DESC> -->
-<!-- <VERS>VERSION: 2.1.0 - 2025-11-25T17:51:29Z</VERS> -->
-<!-- <WCTX>Removed non-ASCII glyphs/artifacts to ensure clean rendering.</WCTX> -->
-<!-- <CLOG>Replaced mojobake/emojis with standard Markdown formatting.</CLOG> -->
+<!-- <VERS>VERSION: 2.2.0 - 2025-11-25T17:57:58Z</VERS> -->
+<!-- <WCTX>Added Path mode to introduction.</WCTX> -->
+<!-- <CLOG>Added Paths bullet point to feature overview.</CLOG> -->
 
 # wsl-clip
 **The Ultimate Clipboard Bridge for WSL2.**
@@ -9,6 +9,7 @@
 *   **Text** -> Copies clean, safe text (pasted into Notepad/Code).
 *   **Images** -> Copies the bitmap (pasted into Slack/Paint).
 *   **Files** -> Copies the file object (pasted into Explorer/Outlook).
+*   **Paths** -> Copies the translated Windows path (pasted into File Dialogs).
 ## Features
 *   **Smart Mode:** Just run `wsl-clip <file>`. The tool detects:
     *   **Magic Bytes:** Recognizes PNG, JPG, PDF, ZIP, etc. regardless of extension.
@@ -81,4 +82,4 @@ wsl-clip path document.pdf
 MIT
 
 <!-- <FILE>README.md</FILE> - <DESC>Documentation for v2.0 Smart Mode (ASCII Safe)</DESC> -->
-<!-- <VERS>END OF VERSION: 2.1.0 - 2025-11-25T17:51:29Z</VERS> -->
+<!-- <VERS>END OF VERSION: 2.2.0 - 2025-11-25T17:57:58Z</VERS> -->
