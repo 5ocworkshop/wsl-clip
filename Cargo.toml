@@ -1,0 +1,36 @@
+# <FILE>Cargo.toml</FILE> - <DESC>Added release profile for size optimization</DESC>
+# <VERS>VERSION: 1.7.0 - 2025-11-25T17:05:08Z</VERS>
+# <WCTX>Added [profile.release] to strip symbols, use LTO, and optimize for size ('z').</WCTX>
+# <CLOG>Added profile.release section with strip=true, opt-level='z', lto=true, panic='abort'.</CLOG>
+
+[package]
+name = "wsl-clip"
+version = "0.3.0"
+edition = "2021"
+description = "High-performance clipboard bridge for WSL2"
+[dependencies]
+# Added "cargo" feature for automatic version/metadata extraction
+clap = { version = "4.4", features = ["derive", "cargo"] }
+anyhow = "1.0"
+dunce = "1.0"
+atty = "0.2"
+chrono = "0.4"
+regex = "1.10"
+infer = "0.15"
+# Logger Dependencies
+colored = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+lazy_static = "1.4"
+[dev-dependencies]
+tempfile = "3.8"
+# Release Profile Optimization (Size vs Speed)
+[profile.release]
+strip = true             # Automatically strip symbols from the binary (Huge size reduction)
+opt-level = "z"          # Optimize for size ("z" is more aggressive than "s")
+lto = true               # Enable Link Time Optimization (removes dead code)
+codegen-units = 1        # Reduce parallel codegen units for better optimization
+panic = "abort"          # Remove panic unwinding tables (smaller binary, immediate crash on panic)
+
+# <FILE>Cargo.toml</FILE> - <DESC>Added release profile for size optimization</DESC>
+# <VERS>END OF VERSION: 1.7.0 - 2025-11-25T17:05:08Z</VERS>
